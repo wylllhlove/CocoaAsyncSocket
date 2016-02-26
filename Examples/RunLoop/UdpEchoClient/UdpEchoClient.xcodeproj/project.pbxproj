@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0400B85D1C8043F20079C563 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0400B85C1C8043F20079C563 /* AsyncUdpSocket.m */; };
 		DC50574D15292039005A70E5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC50574C15292039005A70E5 /* Cocoa.framework */; };
 		DC50575715292039005A70E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC50575515292039005A70E5 /* InfoPlist.strings */; };
 		DC50575915292039005A70E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC50575815292039005A70E5 /* main.m */; };
 		DC50575D15292039005A70E5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DC50575B15292039005A70E5 /* Credits.rtf */; };
 		DC50576015292039005A70E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC50575F15292039005A70E5 /* AppDelegate.m */; };
 		DC5057631529203A005A70E5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5057611529203A005A70E5 /* MainMenu.xib */; };
-		DC50576C15292071005A70E5 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = DC50576B15292071005A70E5 /* AsyncUdpSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0400B85B1C8043F20079C563 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncUdpSocket.h; path = ../../../Source/RunLoop/AsyncUdpSocket.h; sourceTree = "<group>"; };
+		0400B85C1C8043F20079C563 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncUdpSocket.m; path = ../../../Source/RunLoop/AsyncUdpSocket.m; sourceTree = "<group>"; };
 		DC50574815292039005A70E5 /* UdpEchoClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UdpEchoClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC50574C15292039005A70E5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DC50574F15292039005A70E5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -30,8 +32,6 @@
 		DC50575E15292039005A70E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DC50575F15292039005A70E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DC5057621529203A005A70E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		DC50576A15292071005A70E5 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncUdpSocket.h; path = ../../AsyncUdpSocket.h; sourceTree = "<group>"; };
-		DC50576B15292071005A70E5 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncUdpSocket.m; path = ../../AsyncUdpSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +46,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0400B85E1C8043F70079C563 /* UDP */ = {
+			isa = PBXGroup;
+			children = (
+				0400B85B1C8043F20079C563 /* AsyncUdpSocket.h */,
+				0400B85C1C8043F20079C563 /* AsyncUdpSocket.m */,
+			);
+			name = UDP;
+			sourceTree = "<group>";
+		};
 		DC50573D15292038005A70E5 = {
 			isa = PBXGroup;
 			children = (
-				DC5057691529205E005A70E5 /* UDP */,
+				0400B85E1C8043F70079C563 /* UDP */,
 				DC50575215292039005A70E5 /* UdpEchoClient */,
 				DC50574B15292039005A70E5 /* Frameworks */,
 				DC50574915292039005A70E5 /* Products */,
@@ -104,15 +113,6 @@
 				DC50575B15292039005A70E5 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DC5057691529205E005A70E5 /* UDP */ = {
-			isa = PBXGroup;
-			children = (
-				DC50576A15292071005A70E5 /* AsyncUdpSocket.h */,
-				DC50576B15292071005A70E5 /* AsyncUdpSocket.m */,
-			);
-			name = UDP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0400B85D1C8043F20079C563 /* AsyncUdpSocket.m in Sources */,
 				DC50575915292039005A70E5 /* main.m in Sources */,
 				DC50576015292039005A70E5 /* AppDelegate.m in Sources */,
-				DC50576C15292071005A70E5 /* AsyncUdpSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

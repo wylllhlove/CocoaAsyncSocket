@@ -7,35 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11C32861186CDD2A00F6D762 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C3285C186CDD2A00F6D762 /* DDContextFilterLogFormatter.m */; };
-		11C32862186CDD2A00F6D762 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C3285E186CDD2A00F6D762 /* DDDispatchQueueLogFormatter.m */; };
-		11C32863186CDD2A00F6D762 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C32860186CDD2A00F6D762 /* DDMultiFormatter.m */; };
 		DC49317917F9F88F00402F77 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC49317817F9F88F00402F77 /* Default-568h@2x.png */; };
 		DCC96ACD152E11210064C500 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC96ACC152E11210064C500 /* UIKit.framework */; };
 		DCC96ACF152E11210064C500 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC96ACE152E11210064C500 /* Foundation.framework */; };
 		DCC96AD1152E11210064C500 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC96AD0152E11210064C500 /* CoreGraphics.framework */; };
 		DCC96AD7152E11210064C500 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCC96AD5152E11210064C500 /* InfoPlist.strings */; };
-		DCC96AD9152E11210064C500 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96AD8152E11210064C500 /* main.m */; };
-		DCC96ADD152E11210064C500 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96ADC152E11210064C500 /* AppDelegate.m */; };
-		DCC96AE0152E11210064C500 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96ADF152E11210064C500 /* ViewController.m */; };
 		DCC96AE3152E11210064C500 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC96AE1152E11210064C500 /* ViewController.xib */; };
-		DCC96AFE152E11450064C500 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96AEF152E11450064C500 /* DDAbstractDatabaseLogger.m */; };
-		DCC96AFF152E11450064C500 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96AF1152E11450064C500 /* DDASLLogger.m */; };
-		DCC96B00152E11450064C500 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96AF3152E11450064C500 /* DDFileLogger.m */; };
-		DCC96B01152E11450064C500 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96AF5152E11450064C500 /* DDLog.m */; };
-		DCC96B02152E11450064C500 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96AF7152E11450064C500 /* DDTTYLogger.m */; };
-		DCC96B05152E11450064C500 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = DCC96AFD152E11450064C500 /* README.txt */; };
-		DCC96B0A152E115C0064C500 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC96B09152E115C0064C500 /* GCDAsyncUdpSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11C3285A186CDD1F00F6D762 /* DDLog+LOGV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDLog+LOGV.h"; sourceTree = "<group>"; };
-		11C3285B186CDD2A00F6D762 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
-		11C3285C186CDD2A00F6D762 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
-		11C3285D186CDD2A00F6D762 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
-		11C3285E186CDD2A00F6D762 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
-		11C3285F186CDD2A00F6D762 /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
-		11C32860186CDD2A00F6D762 /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
+		0400B8441C80419D0079C563 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = ../../../../Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		0400B8451C80419D0079C563 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = ../../../../Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		0400B8621C8046940079C563 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = ../../../../Source/Vendor/CocoaLumberjack/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		0400B8631C8046940079C563 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = ../../../../Source/Vendor/CocoaLumberjack/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		0400B8641C8046940079C563 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = ../../../../Source/Vendor/CocoaLumberjack/DDASLLogger.h; sourceTree = "<group>"; };
+		0400B8651C8046940079C563 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = ../../../../Source/Vendor/CocoaLumberjack/DDASLLogger.m; sourceTree = "<group>"; };
+		0400B8661C8046940079C563 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = ../../../../Source/Vendor/CocoaLumberjack/DDFileLogger.h; sourceTree = "<group>"; };
+		0400B8671C8046940079C563 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = ../../../../Source/Vendor/CocoaLumberjack/DDFileLogger.m; sourceTree = "<group>"; };
+		0400B8681C8046940079C563 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = ../../../../Source/Vendor/CocoaLumberjack/DDLog.h; sourceTree = "<group>"; };
+		0400B8691C8046940079C563 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = ../../../../Source/Vendor/CocoaLumberjack/DDLog.m; sourceTree = "<group>"; };
+		0400B86A1C8046940079C563 /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "../../../../Source/Vendor/CocoaLumberjack/DDLog+LOGV.h"; sourceTree = "<group>"; };
+		0400B86B1C8046940079C563 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = ../../../../Source/Vendor/CocoaLumberjack/DDTTYLogger.h; sourceTree = "<group>"; };
+		0400B86C1C8046940079C563 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = ../../../../Source/Vendor/CocoaLumberjack/DDTTYLogger.m; sourceTree = "<group>"; };
 		DC49317817F9F88F00402F77 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		DCC96AC8152E11210064C500 /* UdpEchoClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UdpEchoClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC96ACC152E11210064C500 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -50,19 +43,6 @@
 		DCC96ADE152E11210064C500 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DCC96ADF152E11210064C500 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DCC96AE2152E11210064C500 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
-		DCC96AEE152E11450064C500 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
-		DCC96AEF152E11450064C500 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
-		DCC96AF0152E11450064C500 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
-		DCC96AF1152E11450064C500 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
-		DCC96AF2152E11450064C500 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
-		DCC96AF3152E11450064C500 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
-		DCC96AF4152E11450064C500 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
-		DCC96AF5152E11450064C500 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
-		DCC96AF6152E11450064C500 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
-		DCC96AF7152E11450064C500 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
-		DCC96AFD152E11450064C500 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		DCC96B08152E115C0064C500 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = ../../../GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
-		DCC96B09152E115C0064C500 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = ../../../GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +59,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0400B86D1C80469B0079C563 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				0400B8621C8046940079C563 /* DDAbstractDatabaseLogger.h */,
+				0400B8631C8046940079C563 /* DDAbstractDatabaseLogger.m */,
+				0400B8641C8046940079C563 /* DDASLLogger.h */,
+				0400B8651C8046940079C563 /* DDASLLogger.m */,
+				0400B8661C8046940079C563 /* DDFileLogger.h */,
+				0400B8671C8046940079C563 /* DDFileLogger.m */,
+				0400B8681C8046940079C563 /* DDLog.h */,
+				0400B8691C8046940079C563 /* DDLog.m */,
+				0400B86A1C8046940079C563 /* DDLog+LOGV.h */,
+				0400B86B1C8046940079C563 /* DDTTYLogger.h */,
+				0400B86C1C8046940079C563 /* DDTTYLogger.m */,
+			);
+			name = Logging;
+			sourceTree = "<group>";
+		};
 		DCC96ABD152E11210064C500 = {
 			isa = PBXGroup;
 			children = (
-				DCC96AED152E11450064C500 /* Logging */,
+				0400B86D1C80469B0079C563 /* Logging */,
 				DCC96B07152E114C0064C500 /* UDP */,
 				DCC96AD2152E11210064C500 /* UdpEchoClient */,
 				DCC96ACB152E11210064C500 /* Frameworks */,
@@ -133,45 +131,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DCC96AED152E11450064C500 /* Logging */ = {
-			isa = PBXGroup;
-			children = (
-				DCC96AEE152E11450064C500 /* DDAbstractDatabaseLogger.h */,
-				DCC96AEF152E11450064C500 /* DDAbstractDatabaseLogger.m */,
-				DCC96AF0152E11450064C500 /* DDASLLogger.h */,
-				DCC96AF1152E11450064C500 /* DDASLLogger.m */,
-				DCC96AF2152E11450064C500 /* DDFileLogger.h */,
-				DCC96AF3152E11450064C500 /* DDFileLogger.m */,
-				DCC96AF4152E11450064C500 /* DDLog.h */,
-				DCC96AF5152E11450064C500 /* DDLog.m */,
-				11C3285A186CDD1F00F6D762 /* DDLog+LOGV.h */,
-				DCC96AF6152E11450064C500 /* DDTTYLogger.h */,
-				DCC96AF7152E11450064C500 /* DDTTYLogger.m */,
-				DCC96AF8152E11450064C500 /* Extensions */,
-			);
-			name = Logging;
-			path = ../../../../Vendor/CocoaLumberjack;
-			sourceTree = "<group>";
-		};
-		DCC96AF8152E11450064C500 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				11C3285B186CDD2A00F6D762 /* DDContextFilterLogFormatter.h */,
-				11C3285C186CDD2A00F6D762 /* DDContextFilterLogFormatter.m */,
-				11C3285D186CDD2A00F6D762 /* DDDispatchQueueLogFormatter.h */,
-				11C3285E186CDD2A00F6D762 /* DDDispatchQueueLogFormatter.m */,
-				11C3285F186CDD2A00F6D762 /* DDMultiFormatter.h */,
-				11C32860186CDD2A00F6D762 /* DDMultiFormatter.m */,
-				DCC96AFD152E11450064C500 /* README.txt */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		DCC96B07152E114C0064C500 /* UDP */ = {
 			isa = PBXGroup;
 			children = (
-				DCC96B08152E115C0064C500 /* GCDAsyncUdpSocket.h */,
-				DCC96B09152E115C0064C500 /* GCDAsyncUdpSocket.m */,
+				0400B8441C80419D0079C563 /* GCDAsyncUdpSocket.h */,
+				0400B8451C80419D0079C563 /* GCDAsyncUdpSocket.m */,
 			);
 			name = UDP;
 			sourceTree = "<group>";
@@ -183,7 +147,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCC96AE6152E11210064C500 /* Build configuration list for PBXNativeTarget "UdpEchoClient" */;
 			buildPhases = (
-				DCC96AC4152E11210064C500 /* Sources */,
 				DCC96AC5152E11210064C500 /* Frameworks */,
 				DCC96AC6152E11210064C500 /* Resources */,
 			);
@@ -229,33 +192,10 @@
 				DCC96AD7152E11210064C500 /* InfoPlist.strings in Resources */,
 				DC49317917F9F88F00402F77 /* Default-568h@2x.png in Resources */,
 				DCC96AE3152E11210064C500 /* ViewController.xib in Resources */,
-				DCC96B05152E11450064C500 /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		DCC96AC4152E11210064C500 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				11C32863186CDD2A00F6D762 /* DDMultiFormatter.m in Sources */,
-				DCC96AD9152E11210064C500 /* main.m in Sources */,
-				DCC96ADD152E11210064C500 /* AppDelegate.m in Sources */,
-				11C32862186CDD2A00F6D762 /* DDDispatchQueueLogFormatter.m in Sources */,
-				DCC96AE0152E11210064C500 /* ViewController.m in Sources */,
-				DCC96AFE152E11450064C500 /* DDAbstractDatabaseLogger.m in Sources */,
-				DCC96AFF152E11450064C500 /* DDASLLogger.m in Sources */,
-				11C32861186CDD2A00F6D762 /* DDContextFilterLogFormatter.m in Sources */,
-				DCC96B00152E11450064C500 /* DDFileLogger.m in Sources */,
-				DCC96B01152E11450064C500 /* DDLog.m in Sources */,
-				DCC96B02152E11450064C500 /* DDTTYLogger.m in Sources */,
-				DCC96B0A152E115C0064C500 /* GCDAsyncUdpSocket.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
 		DCC96AD5152E11210064C500 /* InfoPlist.strings */ = {
@@ -307,6 +247,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = UdpEchoClient;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -334,6 +275,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = UdpEchoClient;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -344,7 +286,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UdpEchoClient/UdpEchoClient-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "UdpEchoClient/UdpEchoClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -355,7 +299,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UdpEchoClient/UdpEchoClient-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "UdpEchoClient/UdpEchoClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
