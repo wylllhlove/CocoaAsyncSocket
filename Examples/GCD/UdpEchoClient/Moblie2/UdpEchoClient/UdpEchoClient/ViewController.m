@@ -247,11 +247,13 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didSendDataWithTag:(long)tag
 {
 	// You could add checks here
+    NSLog(@"didSendDataWithTag: %ld", tag);
 }
 
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didNotSendDataWithTag:(long)tag dueToError:(NSError *)error
 {
 	// You could add checks here
+    NSLog(@"didNotSendDataWithTag: %d", tag);
 }
 
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didReceiveData:(NSData *)data
