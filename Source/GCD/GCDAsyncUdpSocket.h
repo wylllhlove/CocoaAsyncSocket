@@ -232,7 +232,7 @@ typedef BOOL (^GCDAsyncUdpSocketSendFilterBlock)(NSData *data, NSData *address, 
  * Gets/Sets the maximum size of the buffer that will be allocated for receive operations.
  * The default maximum size is 9216 bytes.
  * 
- * The theoretical maximum size of any IPv4 UDP packet is UINT16_MAX = 65535.
+ * The theoretical(理论的) maximum size of any IPv4 UDP packet is UINT16_MAX = 65535.
  * The theoretical maximum size of any IPv6 UDP packet is UINT32_MAX = 4294967295.
  * 
  * Since the OS/GCD notifies us of the size of each received UDP packet,
@@ -251,7 +251,7 @@ typedef BOOL (^GCDAsyncUdpSocketSendFilterBlock)(NSData *data, NSData *address, 
 - (void)setMaxReceiveIPv6BufferSize:(uint32_t)max;
 
 /**
- * User data allows you to associate arbitrary information with the socket.
+ * User data allows you to associate arbitrary(任意的) information with the socket.
  * This data is not used internally in any way.
 **/
 - (id)userData;
@@ -488,7 +488,7 @@ typedef BOOL (^GCDAsyncUdpSocketSendFilterBlock)(NSData *data, NSData *address, 
 #pragma mark Broadcast
 
 /**
- * By default, the underlying socket in the OS will not allow you to send broadcast messages.
+ * By default, the underlying(潜在的) socket in the OS will not allow you to send broadcast messages.
  * In order to send broadcast messages, you need to enable this functionality in the socket.
  * 
  * A broadcast is a UDP message to addresses like "192.168.255.255" or "255.255.255.255" that is
@@ -765,7 +765,7 @@ typedef BOOL (^GCDAsyncUdpSocketSendFilterBlock)(NSData *data, NSData *address, 
  *      This sometimes results in duplicate packets arriving.
  *      A filter may allow you to architect the duplicate detection code to run in parallel to normal processing.
  *    
- *    - Since the udp socket may be connectionless, its possible for unsolicited packets to arrive.
+ *    - Since the udp socket may be connectionless, its possible for unsolicited(未经请求的) packets to arrive.
  *      Such packets need to be ignored.
  * 
  * 3. Sometimes traffic shapers are needed to simulate real world environments.
@@ -864,25 +864,25 @@ typedef BOOL (^GCDAsyncUdpSocketSendFilterBlock)(NSData *data, NSData *address, 
  * }
  *
  * What happens if you call this method from the socketTargetQueue? The result is deadlock.
- * This is because the GCD API offers no mechanism to discover a queue's targetQueue.
+ * This is because the GCD API offers no mechanism(机制) to discover a queue's targetQueue.
  * Thus we have no idea if our socketQueue is configured with a targetQueue.
  * If we had this information, we could easily avoid deadlock.
  * But, since these API's are missing or unfeasible, you'll have to explicitly set it.
  *
  * IF you pass a socketQueue via the init method,
  * AND you've configured the passed socketQueue with a targetQueue,
- * THEN you should pass the end queue in the target hierarchy.
+ * THEN you should pass the end queue in the target hierarchy(层级).
  *
  * For example, consider the following queue hierarchy:
  * socketQueue -> ipQueue -> moduleQueue
  *
- * This example demonstrates priority shaping within some server.
+ * This example demonstrates（论证） priority shaping within some server.
  * All incoming client connections from the same IP address are executed on the same target queue.
  * And all connections for a particular module are executed on the same target queue.
  * Thus, the priority of all networking for the entire module can be changed on the fly.
- * Additionally, networking traffic from a single IP cannot monopolize the module.
+ * Additionally, networking traffic from a single IP cannot monopolize(独占) the module.
  *
- * Here's how you would accomplish something like that:
+ * Here's how you would accomplish（完成） something like that:
  * - (dispatch_queue_t)newSocketQueueForConnectionFromAddress:(NSData *)address onSocket:(GCDAsyncSocket *)sock
  * {
  *     dispatch_queue_t socketQueue = dispatch_queue_create("", NULL);
@@ -906,7 +906,7 @@ typedef BOOL (^GCDAsyncUdpSocketSendFilterBlock)(NSData *data, NSData *address, 
 - (void)unmarkSocketQueueTargetQueue:(dispatch_queue_t)socketQueuesPreviouslyConfiguredTargetQueue;
 
 /**
- * It's not thread-safe to access certain variables from outside the socket's internal queue.
+ * It's not thread-safe to access(使用) certain variables from outside the socket's internal queue.
  * 
  * For example, the socket file descriptor.
  * File descriptors are simply integers which reference an index in the per-process file table.
@@ -916,7 +916,7 @@ typedef BOOL (^GCDAsyncUdpSocketSendFilterBlock)(NSData *data, NSData *address, 
  * 
  * - Thread A invokes a method which returns the socket's file descriptor.
  * - The socket is closed via the socket's internal queue on thread B.
- * - Thread C opens a file, and subsequently receives the file descriptor that was previously the socket's FD.
+ * - Thread C opens a file, and subsequently(随后) receives the file descriptor that was previously the socket's FD.
  * - Thread A is now accessing/altering the file instead of the socket.
  * 
  * In addition to this, other variables are not actually objects,
@@ -926,12 +926,12 @@ typedef BOOL (^GCDAsyncUdpSocketSendFilterBlock)(NSData *data, NSData *address, 
  * Although there are internal variables that make it difficult to maintain thread-safety,
  * it is important to provide access to these variables
  * to ensure this class can be used in a wide array of environments.
- * This method helps to accomplish this by invoking the current block on the socket's internal queue.
+ * This method helps to accomplish(实现) this by invoking the current block on the socket's internal queue.
  * The methods below can be invoked from within the block to access
  * those generally thread-unsafe internal variables in a thread-safe manner.
  * The given block will be invoked synchronously on the socket's internal queue.
  * 
- * If you save references to any protected variables and use them outside the block, you do so at your own peril.
+ * If you save references to any protected variables and use them outside the block, you do so at your own peril(冒险).
 **/
 - (void)performBlock:(dispatch_block_t)block;
 
@@ -940,7 +940,7 @@ typedef BOOL (^GCDAsyncUdpSocketSendFilterBlock)(NSData *data, NSData *address, 
  * See the documentation for the performBlock: method above.
  * 
  * Provides access to the socket's file descriptor(s).
- * If the socket isn't connected, or explicity bound to a particular interface,
+ * If the socket isn't connected, or explicitly bound to a particular interface,
  * it might actually have multiple internal socket file descriptors - one for IPv4 and one for IPv6.
 **/
 - (int)socketFD;
@@ -990,7 +990,7 @@ typedef BOOL (^GCDAsyncUdpSocketSendFilterBlock)(NSData *data, NSData *address, 
 #pragma mark Utilities
 
 /**
- * Extracting host/port/family information from raw address data.
+ * Extracting(提取) host/port/family information from raw address data.
 **/
 
 + (NSString *)hostFromAddress:(NSData *)address;
